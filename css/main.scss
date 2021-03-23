@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Share Tech Mono';
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {width: 100%;}
+.nav-container {
+    background: #222831;
+    a {
+        color: #44a6d0;
+        font-size: 0.95em;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.35em;
+    .logo {
+        color: #DDDDDD;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+.social-header, .hero-section {
+    display: none;
+}
+.hero {
+    background: #222831;
+    opacity: 0.88;
+    color: white;
+    display: grid;
+    text-align: left;
+    padding: 2.3em;
+    font-family: 'Ubuntu Mono';
+    line-height: 1.54em;
+    .contact {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2.5em;
+        width: 100px;
+        font-weight: bold;
+        color: #FAFAFA;
+    }
+}
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+.featured_projects {
+    background: #f05454;
+    opacity: 0.90;
+    position: relative;
+}
+.featured_projects::before {
+    content: "";
+    position: absolute;
+    width: 730px;
+    height: 27px;
+    background: #30475E;
+    z-index: -1;
+    top: 1437;
+    margin-left: 4em;
+}
+.projects_title {
+    margin-top: 0.77em;
+    margin-left: 12.5em;
+    color: white;
+    font-size: 1.25em;
+}
+.projects_container ul {
+    display: grid;
+}
+.projects_container ul li {
+    background: #f5f4f4;
+    padding: 2em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    .icon_container {
+        height: 80px;
+        place-content: center;
+        margin: 0 auto;
+        &.one {
+            width: 75px;
+        }        
+        &.two {
+            width: 80px;
+        }
+        &.three {
+            width: 95px;
+        }
+    }
+}
+.project_title {
+    margin-bottom: 0.2em;
+    font-weight: bold;
+    font-size: 1.02em;
+}
+.project_title2 {
+    font-weight: bold;
+    font-size: 1.02em;
+}
+.project_desc {
+    margin-bottom: 2em;
+    font-size: 0.88em;
+}
+.project_desc2 {
+    color: #44A6D0;
+    font-family: 'Ubuntu Mono';
+    font-size: 0.75em;
+    margin-bottom: 0.1em;
+}
+
+.other_experiences {
+    background: #30475E;
+    opacity: 0.86;
+    position: relative;
+}
+.other_experiences::before {
+    content: "";
+    position: absolute;
+    width: 730px;
+    height: 27px;
+    background: #F05454;
+    opacity: 0.96;
+    z-index: -1;
+    top: 1437;
+    margin-left: 4em;
+}
+.experiences_title {
+    margin-top: 0.77em;
+    margin-left: 12.5em;
+    color: white;
+    font-size: 1.25em;
+}
+.other_container ul li {
+    background: #f5f4f4;
+    padding: 2em;
+    border-radius: 0.4em;
+    margin-bottom: 1em;
+
+    .icon_container {
+        height: 70px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+        &.one {
+            width: 170px;
+        }        
+        &.two {
+            width: 85px;
+            mix-blend-mode: multiply;
+        }
+        &.three {
+            width: 63px;
+        }        
+        &.four {
+            width: 63px;
+        }
+    }
+}
+.project_desc, .project_desc2 {
+    margin-bottom: 2em;
+    font-size: 0.98em;
+}
+.experience_desc{
+    color: #30475e;
+    line-height: 0.4em;
+    font-size: 0.98em;
+}
+.experience_desc2 {
+    color: black;
+    line-height: auto;
+    font-size: 0.98em;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+    .projects_container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+    .other_container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+    .other_container ul li {
+        .icon_container {
+            height: 70px;
+            display: grid;
+            place-content: center;
+            margin: 0 auto;
+            &.three {
+                width: 43px;
+            }        
+            &.four {
+                width: 43px;
+            }
+        }
+        .experience_desc3 {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+    .skills {
+        padding: 8em;;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        header {
+            background: #222831;
+        }
+        a {
+            font-size: 1.2em;
+            margin-top: 1.48em;
+        }
+    }
+    header {
+        .logo {
+            color: #DDDDDD;
+            font-size: 2em;
+            margin-left: 1.3em;
+            margin-top: 0.6em;
+            font-weight: bold;
+            margin-bottom: 0.4em;
+        }
+    }
+    .social-header {
+        padding: 2em 4em 2em 0;
+    }
+    section {
+        padding: 4em;
+    }
+    .social-header {
+        display: block;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+            img {
+                width: 40px;
+            }
+            .behance {
+                margin-top: 0.3em;
+            }
+        }
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content {
+            background: #222831;
+            padding: 6em 8em 6em 4em;
+            h2 {
+                font-size: 2em;
+                line-height: 1.2em;
+            }
+            .contact {
+                place-content: center;
+                img {
+                    margin-top: 3em;
+                    width: 240px;
+                }
+            }
+        }
+    }
+    .hero-section {
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .social-header {
+        padding: 2em 7em 2em 0;
+    }
+    .project_title, .project_title2 {
+        font-size: 1.63em;
+    }
+    .project_desc, .experience_desc2 {
+        font-size: 1.5em;
+    }
+    .project_desc2 {
+        font-size: 1.3em;
+    }
+}
